@@ -1,1 +1,86 @@
+<!DOCTYPE html>
+ <html lang="en">
+ 	<head>
+ 		<meta charset="utf-8">
+ 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+ 		<meta name="viewport" content="width=device-width, initial-scale=1">
+ 		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+ 		<title>HPS DEMO</title>
 
+ 		<!-- Bootstrap -->
+ 		<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/master.css">
+     <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700,900" rel="stylesheet">
+
+ 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+ 		<!-- WARNING: Respond.js doesnt work if you view the page via file:// -->
+ 		<!--[if lt IE 9]>
+ 			<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+ 			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+ 		<![endif]-->
+ 	</head>
+ 	<body>
+    <button type="button" name="button" onclick="scroller.destroy()" style="position: fixed; top: 0; right: 0; z-index: 999; font-size: 21px">Destroy Scroller</button>
+    <div class="page-wrapper">
+      <header class="content-parent" id="start">
+   		   <div class="color-box">
+           <h1>hello</h1>
+   		   </div>
+         <div class="col-xs-6 col-xs-offset-6 text-box">
+           <h1 class="rellax">It's nice to see you there.</h1>
+         </div>
+   		</header>
+      <section class="content-parent" id="intro">
+        <div class="col-sm-12 col-md-6 col-lg-4 inspiring-item">
+            <h1 class="text-center">Imma first bruh!</h1>
+        </div>
+      </section>
+      <section class="content-parent" id="intro2">
+        <h1 class="text-center">Second section :)</h1>
+      </section>
+      <section class="content-parent" id="intro3">
+        <h1 class="text-center">Third section :D</h1>
+      </section>
+      <section class="content-parent" id="intro4">
+        <h1 class="text-center">Fourth section :3</h1>
+      </section>
+      <section class="content-parent" id="intro5">
+        <h1 class="text-center">Fifth...</h1>
+      </section>
+      <section class="content-parent" id="intro6">
+        <h1 class="text-center">Aaand the last one</h1>
+      </section>
+      <section class="content-parent" id="intro">
+        <h1 class="text-center">Just kidding ;)</h1>
+      </section>
+      <section class="content-parent" id="intro2">
+        <h1 class="text-center">Another one :)</h1>
+      </section>
+      <section class="content-parent" id="intro3">
+        <h1 class="text-center">Maybe I am infinite... Who knows? :D</h1>
+      </section>
+      <section class="content-parent" id="intro4">
+        <h1 class="text-center">Okay, almost done :3</h1>
+      </section>
+      <section class="content-parent" id="intro5">
+        <h1 class="text-center">Just one more...</h1>
+      </section>
+      <section class="content-parent" id="intro6">
+        <h1 class="text-center">This is the end</h1>
+      </section>
+    </div>
+
+    <script src="assets/js/hps.js"></script>
+    <script type="text/javascript">
+      var scroller = new HPS('.page-wrapper', {
+        ease: 0.08,
+      });
+
+      window.onload = function() {
+        document.querySelector('.color-box').classList.add('slide');
+      }
+    </script>
+ 	</body>
+ </html>
